@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Preferences</string>
+		</dict>
+		<dict>
+            <key>cell</key>
+            <string>PSTableCell</string>
+            <key>cellClass</key>
+            <string>HBColorPickerCell</string>
+            <key>defaults</key>
+            <string>com.wizage.SpringPrefs</string>
+            <key>PostNotification</key>
+            <string>com.wizage.SpringPrefs/ReloadPrefs</string>
+            <key>key</key>
+            <string>backgroundColor</string>
+            <key>label</key>
+            <string>Background Color</string>
+            <key>default</key>
+            <string>#000000</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSTableCell</string>
+            <key>cellClass</key>
+            <string>HBColorPickerCell</string>
+            <key>defaults</key>
+            <string>com.wizage.SpringPrefs</string>
+            <key>PostNotification</key>
+            <string>com.wizage.SpringPrefs/ReloadPrefs</string>
+            <key>key</key>
+            <string>appleColor</string>
+            <key>label</key>
+            <string>Apple Color</string>
+            <key>default</key>
+            <string>#FFFFFF</string>
+        </dict>
+        <dict>
+			<key>action</key>
+			<string>preview</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Preview</string>
+		</dict>
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+        <dict>
+		    <key>big</key>
+		    <true/>
+		    <key>cellClass</key>
+		    <string>HBTwitterCell</string>
+		    <key>height</key>
+		    <integer>56</integer>
+		    <key>label</key>
+		    <string>Wizages</string>
+		    <key>user</key>
+		    <string>wizages</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>showSupportEmailController</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Support</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>© 2017 Wizages</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>SpringChanger</string>
+</dict>
+</plist>
