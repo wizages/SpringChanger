@@ -18,13 +18,12 @@
 - (void)_createLayer {
 	%orig;
 
-	//self.layer.backgroundColor = [[SCPreferencesManager sharedInstance] colorForPreference:@"backgroundColor" fallback:@"#000000"].CGColor;
 	UIImage *image = [[SCPreferencesManager sharedInstance]imageForShowing];
-	if (image != nil){
-		//self.layer.contentsScale = [UIScreen mainScreen].scale; //<-needed for the retina display, otherwise our image will not be scaled properly
+	if (image != nil && [[SCPreferencesManager sharedInstance] isImageEnabled]){
 		self.layer.contentsGravity = kCAGravityResizeAspectFill;
-        //self.layer.contentsCenter = CGRectMake(15.0/image.size.width,0.0/image.size.height,1.0/image.size.width,0.0/image.size.height);
 		self.layer.contents = (id)image.CGImage;
+	} else {
+		self.layer.backgroundColor = [[SCPreferencesManager sharedInstance] colorForPreference:@"backgroundColor" fallback:@"#000000"].CGColor;
 	}
 }
 

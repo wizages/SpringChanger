@@ -2,7 +2,7 @@
 #import <Cephei/HBPreferences.h>
 #import <libcolorpicker.h>
 
-static NSString *const kSCEnabledKey = @"enabled";
+static NSString *const kSCEnabledKey = @"isImageEnabled";
 
 
 @implementation SCPreferencesManager {
@@ -23,7 +23,7 @@ static NSString *const kSCEnabledKey = @"enabled";
 	if (self = [super init]) {
 		_preferences = [[HBPreferences alloc] initWithIdentifier:@"com.wizage.SpringPrefs"];
 
-		[_preferences registerBool:&_enabled default:YES forKey:kSCEnabledKey];
+		[_preferences registerBool:&_isImageEnabled default:NO forKey:kSCEnabledKey];
 	}
 
 	return self;

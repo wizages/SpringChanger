@@ -2,7 +2,7 @@
 
 @interface SCPreferencesManager : NSObject
 
-@property (nonatomic, readonly) BOOL enabled;
+@property (nonatomic, readonly) BOOL isImageEnabled;
 
 + (instancetype)sharedInstance;
 - (UIColor *)colorForPreference:(NSString *)string fallback:(NSString *)fallback ;

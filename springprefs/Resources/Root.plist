@@ -43,6 +43,26 @@
             <string>#FFFFFF</string>
         </dict>
         <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Picture for Respring</string>
+		</dict>
+        <dict>
+        	<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.wizage.SpringPrefs</string>
+			<key>key</key>
+			<string>isImageEnabled</string>
+			<key>label</key>
+			<string>Enable Custom Picture Background</string>
+			<key>PostNotification</key>
+			<string>com.wizage.SpringPrefs/ReloadPrefs</string>
+        </dict>
+        <dict>
 			<key>action</key>
 			<string>selectPhotos</string>
 			<key>cell</key>
