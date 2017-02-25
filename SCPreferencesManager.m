@@ -38,6 +38,14 @@ static NSString *const kSCEnabledKey = @"enabled";
 	return LCPParseColorString(fallback, @"#000000");
 }
 
+-(UIImage *)imageForShowing{
+	NSData *imageData = _preferences[@"photo"];
+	if (imageData == nil){
+		return nil;
+	}
+	return [[UIImage alloc]initWithData:imageData];
+}
+
 #pragma mark - Memory management
 
 - (void)dealloc {

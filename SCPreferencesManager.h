@@ -6,4 +6,5 @@
 
 + (instancetype)sharedInstance;
 - (UIColor *)colorForPreference:(NSString *)string fallback:(NSString *)fallback ;
+-(UIImage *)imageForShowing;
 @end

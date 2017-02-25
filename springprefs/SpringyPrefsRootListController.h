@@ -1,6 +1,6 @@
 #import <CepheiPrefs/HBRootListController.h>
 #import <Preferences/PSListController.h>
 
-@interface SpringyPrefsRootListController : HBRootListController
+@interface SpringyPrefsRootListController : HBRootListController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
