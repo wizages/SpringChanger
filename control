@@ -1,9 +1,9 @@
 Package: com.wizages.springchanger
 Name: SpringChanger
-Depends: mobilesubstrate, com.wizages.bae
-Version: 0.1
+Depends: mobilesubstrate, com.wizages.bae, ws.hbang.common
+Version: 0.2
 Architecture: iphoneos-arm
-Description: Allows you to change the colors of the respring screen. Also allows you to preview without respringing.
+Description: Allows you to change the colors of the respring screen and even add images. Also allows you to preview without respringing.
 Maintainer: wizage
 Author: wizage
 Section: Tweaks

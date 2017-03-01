@@ -3,6 +3,7 @@
 #import <libcolorpicker.h>
 
 static NSString *const kSCEnabledKey = @"isImageEnabled";
+static NSString *const kSCEnabledTKey = @"isTintEnabled";
 
 
 @implementation SCPreferencesManager {
@@ -24,6 +25,7 @@ static NSString *const kSCEnabledKey = @"isImageEnabled";
 		_preferences = [[HBPreferences alloc] initWithIdentifier:@"com.wizage.SpringPrefs"];
 
 		[_preferences registerBool:&_isImageEnabled default:NO forKey:kSCEnabledKey];
+		[_preferences registerBool:&_isTintEnabled default:YES forKey:kSCEnabledTKey];
 	}
 
 	return self;

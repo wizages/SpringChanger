@@ -16,7 +16,7 @@
 }
 
 + (NSString *)hb_shareText {
-    return @"Make your resprings awesome!";
+    return @"Make your resprings awesome or something like that... Or just say hi to Apple :)";
 }
 
 +(NSString *)hb_shareURL {

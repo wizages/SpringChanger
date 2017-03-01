@@ -59,7 +59,7 @@
 
   	_colorPreview = LCPParseColorString(_colorString, @"#FFFFFF");
 	HBLogDebug(@"libColorPickerAlert called : %@ , %@", _colorPreview, _colorString);
-	PFColorAlert *alert = [PFColorAlert colorAlertWithStartColor:_colorPreview showAlpha:NO];
+	PFColorAlert *alert = [PFColorAlert colorAlertWithStartColor:_colorPreview showAlpha:YES];
 	[alert displayWithCompletion: ^void (UIColor *pickedColor){
     	NSString *hexString = [UIColor hexFromColor:pickedColor];
     	hexString = [hexString stringByAppendingFormat:@":%g", pickedColor.alpha];
